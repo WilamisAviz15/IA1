@@ -1,0 +1,51 @@
+Regra1: Se andar = 1 E botao = 1 E caminho = livre entao msg = abrir porta
+Regra2: se andar = 1 E botao = 2 E caminho = livre entao msg = subindo para 2o andar
+Regra3: se andar = 1 E botao = 3 E caminho = livre entao msg = subindo para 3o andar
+Regra4: se andar = 1 E botao = 4 E caminho = livre entao msg = subindo para 4o andar
+Regra5: se andar = 1 E botao = 5 E caminho = livre entao msg = subindo para 5o andar
+Regra6: se andar = 1 E botao = 6 E caminho = livre entao msg = subindo para 6o andar
+Regra7: se andar = 2 E botao = 1 E caminho = livre entao msg = descendo para 1o andar
+Regra8: se andar = 2 E botao = 2 E caminho = livre entao msg = abrir porta
+Regra9: se andar = 2 E botao = 3 E caminho = livre entao msg = subindo para 3o andar
+Regra10: se andar = 2 E botao = 4 E caminho = livre entao msg = subindo para 4o andar
+Regra11: se andar = 2 E botao = 5 E caminho = livre entao msg = subindo para 5o andar
+Regra12: se andar = 2 E botao = 6 E caminho = livre entao msg = subindo para 6o andar
+Regra13: se andar = 3 E botao = 1 E caminho = livre entao msg = descendo para 1o andar
+Regra14: se andar = 3 E botao = 2 E caminho = livre entao msg = descendo para 2o andar
+Regra15: se andar = 3 E botao = 3 E caminho - livre entao msg = abrir porta
+Regra16: se andar = 3 E botao = 4 E caminho - livre entao msg = subindo para 4o andar
+Regra17: se andar = 3 E botao = 5 E caminho - livre entao msg = subindo para 5o andar
+Regra18: se andar = 3 E botao = 6 E caminho - livre entao msg = subindo para 6o andar
+Regra19: Se andar = 4 E botao = 1 E caminho = livre entao msg = descendo para 1o andar
+Regra20: se andar = 4 E botao = 2 E caminho = livre entao msg = descendo para 2o andar
+Regra21: se andar = 4 E botao = 3 E caminho = livre entao msg = descendo para 3o andar
+Regra22: se andar = 4 E botao = 4 E caminho = livre entao msg = abrir a porta
+Regra23: se andar = 4 E botao = 5 E caminho = livre entao msg = subindo para 5o andar
+Regra24: se andar = 4 E botao = 6 E caminho = livre entao msg = subindo para 6o andar
+Regra25: Se andar = 5 E botao = 1 E caminho = livre entao msg = descendo para 1o andar
+Regra26: se andar = 5 E botao = 2 E caminho = livre entao msg = descendo para 2o andar
+Regra27: se andar = 5 E botao = 3 E caminho = livre entao msg = descendo para 3o andar
+Regra28: se andar = 5 E botao = 4 E caminho = livre entao msg = descendo para 4o andar
+Regra29: se andar = 5 E botao = 5 E caminho = livre entao msg = abrir porta
+Regra30: se andar = 5 E botao = 6 E caminho = livre entao msg = subindo para 6o andar
+Regra31: Se andar = 6 E botao = 1 E caminho = livre entao msg = descendo para 1o andar
+Regra32: se andar = 6 E botao = 2 E caminho = livre entao msg = descendo para 2o andar
+Regra33: se andar = 6 E botao = 3 E caminho = livre entao msg = descendo para 3o andar
+Regra34: se andar = 6 E botao = 4 E caminho = livre entao msg = descendo para 4o andar
+Regra35: se andar = 6 E botao = 5 E caminho = livre entao msg = descendo para 5o andar
+Regra36: se andar = 6 E botao = 6 E caminho = livre entao msg = abrir porta
+Regra37: Se andar = 1 E botao = 1 E caminho = a caminho do 2o andar entao msg = descer para 1o andar em seguida
+Regra38: Se andar = 1 E botao = 1 E caminho = a caminho do 3o andar entao msg = descer para 1o andar em seguida
+Regra39: Se andar = 1 E botao = 1 E caminho = a caminho do 4o andar entao msg = descer para 1o andar em seguida
+Regra40: Se andar = 1 E botao = 1 E caminho = a caminho do 5o andar entao msg = descer para 1o andar em seguida
+Regra41: Se andar = 1 E botao = 1 E caminho = a caminho do 6o andar entao msg = descer para 1o andar em seguida
+Regra42: Se andar = 2 E botao = 2 E caminho = a caminho do 1o andar entao msg = subir para 2o andar em seguida
+Regra43: Se andar = 2 E botao = 2 E caminho = a caminho do 3o andar entao msg = descer para 2o andar em seguida
+Regra44: Se andar = 2 E botao = 2 E caminho = a caminho do 4o andar entao msg = descer para 2o andar em seguida
+Regra45: Se andar = 2 E botao = 2 E caminho = a caminho do 5o andar entao msg = descer para 2o andar em seguida
+Regra46: Se andar = 2 E botao = 2 E caminho = a caminho do 6o andar entao msg = descer para 2o andar em seguida
+Regra47: Se andar = 3 E botao = 3 E caminho = a caminho do 1o andar entao msg = subir para 3o andar em seguida
+Regra48: Se andar = 3 E botao = 3 E caminho = a caminho do 2o andar entao msg = subir para 3o andar em seguida
+Regra49: Se andar = 3 E botao = 3 E caminho = a caminho do 4o andar entao msg = descer para 3o andar em seguida
+Regra50: Se andar = 3 E botao = 3 E caminho = a caminho do 5o andar entao msg = descer para 3o andar em seguida
+Regra51: Se andar = 3 E botao = 3 E caminho = a caminho do 6o andar entao msg = descer para 3o andar em seguida
