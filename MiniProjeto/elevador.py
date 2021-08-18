@@ -30,6 +30,29 @@ def janela_andar_atual():
                         bg=background)
     c1.grid(row=3, column=0)
 
+    b1 = tk.Button(raiz, text="Continuar", command=caminho_elevador, bg=background)
+    b1.grid(row=18, column=0, padx=0, pady=0)
+
+def caminho_elevador():
+    fontTipo = tkFont.Font(family="Helvetica", size=15)
+    tk.Label(raiz, text="Para qual andar o elevador está a caminho?", width=60, bg=background, font=fontTipo).grid(row=0, column=0)
+
+    c1 = tk.Checkbutton(raiz, text="1o andar", variable=caminhoElevador, onvalue=1, width=50, height=5,
+                        bg=background)
+    c1.grid(row=1, column=0)
+
+    c1 = tk.Checkbutton(raiz, text="2o andar", variable=caminhoElevador, onvalue=2, width=50, height=5,
+                        bg=background)
+    c1.grid(row=2, column=0)
+
+    c1 = tk.Checkbutton(raiz, text="3o andar", variable=caminhoElevador, onvalue=3, width=50, height=5,
+                        bg=background)
+    c1.grid(row=3, column=0)
+
+    c1 = tk.Checkbutton(raiz, text="Livre", variable=caminhoElevador, onvalue=-1, width=50, height=5,
+                        bg=background)
+    c1.grid(row=4, column=0)
+
     b1 = tk.Button(raiz, text="Continuar", command=result, bg=background)
     b1.grid(row=18, column=0, padx=0, pady=0)
 
@@ -81,13 +104,14 @@ raiz = tk.Tk()
 raiz.title("Controle de um elevador")
 raiz.columnconfigure(0, weight=1, minsize=75)
 raiz.rowconfigure(0, weight=1, minsize=50)
-raiz.geometry("400x400")
+raiz.geometry("400x420")
 raiz.config(bg=background)
 raiz.resizable(True, True)
 
 # variaveis de escolha dos campos selecionados
 escolhaAndarDesejado = tk.IntVar()
 escolhaAndarAtual = tk.IntVar()
+caminhoElevador = tk.IntVar()
 
 fontStyle = tkFont.Font(family="Helvetica", size=20, weight="bold")
 
