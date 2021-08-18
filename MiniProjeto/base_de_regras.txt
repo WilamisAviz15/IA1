@@ -49,3 +49,4 @@ Regra48: Se andar = 3 E botao = 2 E caminho = a caminho do 4o andar entao msg = 
 Regra49: Se andar = 3 E botao = 4 E caminho = a caminho do 5o andar entao msg = descer para 4o andar em seguida
 Regra50: Se andar = 3 E botao = 5 E caminho = a caminho do 6o andar entao msg = descer para 5o andar em seguida
 Regra51: Se andar = 3 E botao = 6 E caminho = a caminho do 1o andar entao msg = subir para 6o andar em seguida
+
