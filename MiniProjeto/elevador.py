@@ -10,6 +10,7 @@ def verificaRegras():
 
     controleElevador.declare(Fact(AndarAtual=str(escolhaAndarAtual.get())))
     controleElevador.declare(Fact(AndarDesejado=str(escolhaAndarDesejado.get())))
+    controleElevador.declare(Fact(CaminhoAtual=str(caminhoElevador.get())))
     controleElevador.run()
 
     return controleElevador.resposta
@@ -37,19 +38,19 @@ def caminho_elevador():
     fontTipo = tkFont.Font(family="Helvetica", size=15)
     tk.Label(raiz, text="Para qual andar o elevador está a caminho?", width=60, bg=background, font=fontTipo).grid(row=0, column=0)
 
-    c1 = tk.Checkbutton(raiz, text="1o andar", variable=caminhoElevador, onvalue=1, width=50, height=5,
+    c1 = tk.Checkbutton(raiz, text="A caminho do 1o andar", variable=caminhoElevador, onvalue=1, width=50, height=5,
                         bg=background)
     c1.grid(row=1, column=0)
 
-    c1 = tk.Checkbutton(raiz, text="2o andar", variable=caminhoElevador, onvalue=2, width=50, height=5,
+    c1 = tk.Checkbutton(raiz, text="A caminho do 2o andar", variable=caminhoElevador, onvalue=2, width=50, height=5,
                         bg=background)
     c1.grid(row=2, column=0)
 
-    c1 = tk.Checkbutton(raiz, text="3o andar", variable=caminhoElevador, onvalue=3, width=50, height=5,
+    c1 = tk.Checkbutton(raiz, text="A caminho do 3o andar", variable=caminhoElevador, onvalue=3, width=50, height=5,
                         bg=background)
     c1.grid(row=3, column=0)
 
-    c1 = tk.Checkbutton(raiz, text="Livre", variable=caminhoElevador, onvalue=-1, width=50, height=5,
+    c1 = tk.Checkbutton(raiz, text="Elevador livre", variable=caminhoElevador, onvalue=999, width=50, height=5,
                         bg=background)
     c1.grid(row=4, column=0)
 
@@ -88,7 +89,7 @@ def caminho_elevador():
 
 
 def result():
-    print(escolhaAndarAtual.get())
+    print(caminhoElevador.get())
     newWindow = tk.Toplevel()
     newWindow.title("Resultado")
     newWindow.geometry("250x250")
