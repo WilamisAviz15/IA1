@@ -31,6 +31,18 @@ def janela_andar_atual():
                         bg=background)
     c1.grid(row=3, column=0)
 
+    c1 = tk.Checkbutton(raiz, text="4o andar", variable=escolhaAndarAtual, onvalue=4, width=50, height=5,
+                        bg=background)
+    c1.grid(row=4, column=0)
+
+    c1 = tk.Checkbutton(raiz, text="5o andar", variable=escolhaAndarAtual, onvalue=5, width=50, height=5,
+                        bg=background)
+    c1.grid(row=5, column=0)
+
+    c1 = tk.Checkbutton(raiz, text="6o andar", variable=escolhaAndarAtual, onvalue=6, width=50, height=5,
+                        bg=background)
+    c1.grid(row=6, column=0)
+
     b1 = tk.Button(raiz, text="Continuar", command=caminho_elevador, bg=background)
     b1.grid(row=18, column=0, padx=0, pady=0)
 
@@ -50,9 +62,21 @@ def caminho_elevador():
                         bg=background)
     c1.grid(row=3, column=0)
 
-    c1 = tk.Checkbutton(raiz, text="Elevador livre", variable=caminhoElevador, onvalue=999, width=50, height=5,
+    c1 = tk.Checkbutton(raiz, text="A caminho do 4o andar", variable=caminhoElevador, onvalue=4, width=50, height=5,
                         bg=background)
     c1.grid(row=4, column=0)
+
+    c1 = tk.Checkbutton(raiz, text="A caminho do 5o andar", variable=caminhoElevador, onvalue=5, width=50, height=5,
+                        bg=background)
+    c1.grid(row=5, column=0)
+
+    c1 = tk.Checkbutton(raiz, text="A caminho do 6o andar", variable=caminhoElevador, onvalue=6, width=50, height=5,
+                        bg=background)
+    c1.grid(row=6, column=0)
+
+    c1 = tk.Checkbutton(raiz, text="Elevador livre", variable=caminhoElevador, onvalue=999, width=50, height=5,
+                        bg=background)
+    c1.grid(row=7, column=0)
 
     b1 = tk.Button(raiz, text="Continuar", command=result, bg=background)
     b1.grid(row=18, column=0, padx=0, pady=0)
@@ -105,7 +129,7 @@ raiz = tk.Tk()
 raiz.title("Controle de um elevador")
 raiz.columnconfigure(0, weight=1, minsize=75)
 raiz.rowconfigure(0, weight=1, minsize=50)
-raiz.geometry("400x420")
+raiz.geometry("400x720")
 raiz.config(bg=background)
 raiz.resizable(True, True)
 
@@ -127,6 +151,15 @@ c1.grid(row=2, column=0)
 
 c1 = tk.Checkbutton(raiz, text="3o andar", variable=escolhaAndarDesejado, onvalue=3, width=50, height=5, bg=background)
 c1.grid(row=3, column=0)
+
+c1 = tk.Checkbutton(raiz, text="4o andar", variable=escolhaAndarDesejado, onvalue=4, width=50, height=5, bg=background)
+c1.grid(row=4, column=0)
+
+c1 = tk.Checkbutton(raiz, text="5o andar", variable=escolhaAndarDesejado, onvalue=5, width=50, height=5, bg=background)
+c1.grid(row=5, column=0)
+
+c1 = tk.Checkbutton(raiz, text="6o andar", variable=escolhaAndarDesejado, onvalue=6, width=50, height=5, bg=background)
+c1.grid(row=6, column=0)
 
 b1 = tk.Button(raiz, text="Continuar", command=janela_andar_atual, bg=background)
 b1.grid(row=18, column=0, padx=0, pady=0)
