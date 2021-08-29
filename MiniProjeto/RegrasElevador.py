@@ -693,7 +693,7 @@ class RegrasElevador(KnowledgeEngine):
         self.resposta = "Elevador ja está a caminho do andar desejado"
 
     @Rule(AND(Fact(AndarAtual='6'), Fact(AndarDesejado='6'), Fact(CaminhoAtual='999')))
-    def andar6desejado5caminholivre(self):
+    def andar6desejado6caminholivre(self):
         self.resposta = "Abrir a porta"
     
     @Rule(AND(Fact(AndarAtual='6'), Fact(AndarDesejado='1'), Fact(CaminhoAtual='999')))

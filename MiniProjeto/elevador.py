@@ -1,6 +1,7 @@
 import tkinter as tk
 import RegrasElevador as rules
 from experta import Fact
+import sys, os
 import tkinter.font as tkFont
 
 # Busca nas regras para qual andar irá
@@ -111,25 +112,30 @@ def caminho_elevador():
 #     b2 = tk.Button(andarAtual, text="Continuar", command=result, bg=background)
 #     b2.grid(row=18, column=0, padx=0, pady=0)
 
-
 def result():
     print(caminhoElevador.get())
     newWindow = tk.Toplevel()
     newWindow.title("Resultado")
     newWindow.geometry("250x250")
-    tk.Label(newWindow, text="Resultado").pack()
-
     response = verificaRegras()
     if response == '':
-        response = 'Preencha todos os campos'
+        response = 'Opcao invalida'
+    tk.Label(newWindow, text='opcoes escolhidas:').pack()
+    tk.Label(newWindow, text='Andar desejado: '+str(escolhaAndarDesejado.get())).pack()
+    tk.Label(newWindow, text='Andar atual: '+str(escolhaAndarAtual.get())).pack()
+    tk.Label(newWindow, text='Caminho elevador: '+str(caminhoElevador.get())).pack()
+    tk.Label(newWindow, text=">>>>>>Resultado<<<<<<").pack()
     tk.Label(newWindow, text=str(response)).pack()
+    raiz.withdraw()
+    b1 = tk.Button(newWindow, text="Sair", command=newWindow.quit, bg=background)
+    b1.pack()
 
 background = "#C0C0C0"
 raiz = tk.Tk()
 raiz.title("Controle de um elevador")
 raiz.columnconfigure(0, weight=1, minsize=75)
-raiz.rowconfigure(0, weight=1, minsize=50)
-raiz.geometry("400x720")
+raiz.rowconfigure(0, weight=0, minsize=50)
+raiz.geometry("382x670")
 raiz.config(bg=background)
 raiz.resizable(True, True)
 
