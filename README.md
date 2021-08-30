@@ -6,5 +6,5 @@ Professor da disciplina:
 * Evandro Barros           - Professor Adjunto              - evandro@ic.ufal.br
 
 Participantes:
-* Élisson Souza            - Ciência da Computação          - efs2@ic.ufal.br
+* Élisson Souza            - Engenharia de Computação       - efs2@ic.ufal.br
 * Wilamis Micael           - Engenharia de Computação       - wmaa@ic.ufal.br
