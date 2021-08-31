@@ -10,6 +10,6 @@ Participantes:
 * Wilamis Micael           - Engenharia de Computação       - wmaa@ic.ufal.br
 
 ## Base de regras de decisão
-| Func. |  Título da funcionalidade                  |   Breve Descrição  |
-| ----- | ---------------------------                |  ----------------- |
-|   1   |     Teste                                  | Teste |
+| Regras |  Andar desejado | Andar atual do elevador | andar o elevador está a caminho |    Saída    |
+| ----- | ---------------  | ------------------------| ------------------------------- | ----------- |
+|   1   |     1            |          1              |            999                  | Abrir a porta|
