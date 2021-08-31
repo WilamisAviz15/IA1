@@ -12,4 +12,4 @@ Participantes:
 ## Base de regras de decisão
 | Regras |  Andar desejado | Andar atual do elevador | andar o elevador está a caminho |    Saída    |
 | ----- | ---------------  | ------------------------| ------------------------------- | ----------- |
-|   1   |     1            |          1              |            999                  | Abrir a porta|
+|   R1   |     1            |          1              |            999                  | Abrir a porta|
