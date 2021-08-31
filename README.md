@@ -8,3 +8,8 @@ Professor da disciplina:
 Participantes:
 * Élisson Souza            - Engenharia de Computação       - efs2@ic.ufal.br
 * Wilamis Micael           - Engenharia de Computação       - wmaa@ic.ufal.br
+
+** Base de regras de decisão
+| Func. |  Título da funcionalidade                  |   Breve Descrição  |
+| ----- | ---------------------------                |  ----------------- |
+|   1   |     Teste                                  | Teste |
